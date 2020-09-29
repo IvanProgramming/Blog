@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "meta_header_template.html" %}
+<body>
+<!-- this root div exists to handle footer problems -->
+<div id="root">
+    {% include "main_header.html" %}
+    {% include "nav.html" %}
+
+    <!-- main content -->
+    <div class="main-content">
+        <div class="container">
+            <div class="columns is-mobile">
+                <!-- posts -->
+                <div class="column is-8">
+                    <!-- post -->
+                    <div class="section">
+                        <div class="post">
+                            <div class="post-header">
+                                <h4 class="title is-4"><a href="post.html">Some Post with Passion</a></h4>
+                                <h5 class="subtitle is-5">A Subtitle without Passion</h5>
+                            </div>
+                            <div class="post-content">
+                                <p>Nulla semper ipsum consequat magna vestibulum ornare. Donec dictum nibh vitae orci
+                                    pellentesque rhoncus a sed dolor. Integer non suscipit ex. Quisque tristique est ac
+                                    vulputate dictum. Vestibulum tristique ante in nulla vulputate interdum.
+                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                    egestas. Morbi sed ex elementum, consectetur leo et, auctor augue. Maecenas
+                                    tincidunt vitae libero non lobortis ...</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of post -->
+                    <!-- post -->
+                    <div class="section">
+                        <div class="post">
+                            <div class="post-header">
+                                <h4 class="title is-4"><a href="post.html">Some Post with Passion</a></h4>
+                                <h5 class="subtitle is-5">A Subtitle without Passion</h5>
+                            </div>
+                            <div class="post-content">
+                                <p>Nulla semper ipsum consequat magna vestibulum ornare. Donec dictum nibh vitae orci
+                                    pellentesque rhoncus a sed dolor. Integer non suscipit ex. Quisque tristique est ac
+                                    vulputate dictum. Vestibulum tristique ante in nulla vulputate interdum.
+                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                    egestas. Morbi sed ex elementum, consectetur leo et, auctor augue. Maecenas
+                                    tincidunt vitae libero non lobortis ...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of post -->
+                    <!-- post -->
+                    <div class="section">
+                        <div class="post">
+                            <div class="post-header">
+                                <h4 class="title is-4"><a href="post.html">Some Post with Passion</a></h4>
+                                <h5 class="subtitle is-5">A Subtitle without Passion</h5>
+                            </div>
+                            <div class="post-content">
+                                <p>Nulla semper ipsum consequat magna vestibulum ornare. Donec dictum nibh vitae orci
+                                    pellentesque rhoncus a sed dolor. Integer non suscipit ex. Quisque tristique est ac
+                                    vulputate dictum. Vestibulum tristique ante in nulla vulputate interdum.
+                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                    egestas. Morbi sed ex elementum, consectetur leo et, auctor augue. Maecenas
+                                    tincidunt vitae libero non lobortis ...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of post -->
+                    <!-- end of posts -->
+
+                    <!-- pagination -->
+                    <div class="section">
+                        <div class="pagination-content has-text-right is-hidden-mobile">
+                            <a class="pagination-previous" disabled>Previous</a>
+                            <a class="pagination-next">Next</a>
+                        </div>
+                        <div class="pagination-content is-hidden-desktop is-hidden-tablet">
+                            <div class="pagination">
+                                <a class="pagination-previous" disabled>Previous</a>
+                                <a class="pagination-next">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of pagination -->
+                </div>
+                <!-- side bar -->
+                <div class="column is-4 is-narrow">
+                    <!-- featured -->
+                    <div class="section">
+                        <div class="sidebar">
+                            <div class="sidebar-header">
+                                <h4 class="title is-4">Featured Posts</h4>
+                            </div>
+                            <div class="sidebar-list">
+                                <p><a href="post.html">Some Post</a></p>
+                                <p><a href="post.html">Some Post</a></p>
+                                <p><a href="post.html">Some Post</a></p>
+                                <p><a href="post.html">Some Post</a></p>
+                                <p><a href="post.html">Some Post</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of featured -->
+                    <!-- categories -->
+                    <div class="section">
+                        <div class="sidebar">
+                            <div class="sidebar-header">
+                                <h4 class="title is-4">Categories</h4>
+                            </div>
+                            <div class="sidebar-list">
+                                <p><a href="category.html">Some Category</a></p>
+                                <p><a href="category.html">Some Category</a></p>
+                                <p><a href="category.html">Some Category</a></p>
+                                <p><a href="category.html">Some Category</a></p>
+                                <p><a href="category.html">Some Category</a></p>
+                                <p><a href="category.html">Some Category</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of categories -->
+                </div>
+                <!-- end of side bar -->
+            </div>
+        </div>
+    </div>
+    <!-- end of main content -->
+</div>
+<!-- end of root div -->
+
+{% include "footer.html" %}
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "meta_header_template.html" %}
+<body>
+<!-- this root div exists to handle footer problems -->
+<div id="root">
+    {% include "main_header.html" %}
+    {% include "nav.html" %}
+    <!-- main content -->
+    <div class="main-content">
+        <div class="container">
+            <div class="columns is-mobile">
+                <!-- side bar -->
+                <div class="column is-4 is-narrow">
+                    <div class="section">
+                        <!-- side bar content -->
+                        <div class="sidebar">
+                            <!-- side bar header -->
+                            <div class="sidebar-header-single">
+                                <h4 class="title is-4">Contact</h4>
+                                <h5 class="subtitle is-5">Contact Subtitle without Passion</h5>
+                            </div>
+                            <!-- side bar inner content -->
+                            <div class="sidebar-list-single">
+                                <!-- side bar navigation -->
+                                <div class="sidebar-list-nav">
+                                    <a class="is-tab" href="">
+			<span class="icon">
+			  <i class="fa fa-github"></i>
+			</span>
+                                    </a>
+                                    <a class="is-tab" href="">
+			<span class="icon">
+			  <i class="fa fa-twitter"></i>
+			</span>
+                                    </a>
+                                    <a class="is-tab" href="">
+			<span class="icon">
+			  <i class="fa fa-facebook"></i>
+			</span>
+                                    </a>
+                                    <a class="is-tab" href="">
+			<span class="icon">
+			  <i class="fa fa-instagram"></i>
+			</span>
+                                    </a>
+                                </div>
+                                <!-- end of side bar navigation -->
+                            </div>
+                            <!-- end of side bar inner content -->
+                            <!-- side bar footer -->
+                            <div class="sidebar-footer-single">
+                                <p><a href="index.html">Back to Home</a></p>
+                            </div>
+                            <!-- end of side bar footer -->
+                        </div>
+                        <!-- end of side bar content -->
+                    </div>
+                </div>
+                <!-- end of side bar -->
+
+                <!-- contact content -->
+                <div class="column is-8">
+                    <div class="section">
+                        <div class="post-single">
+                            <div class="post-single-content">
+                                <!-- form begin -->
+                                <div class="card-content-form">
+                                    <!-- this is flavour text; can remove -->
+                                    <p>Donec feugiat dui et arcu consectetur, eu dapibus nisi volutpat. Nam ex sem,
+                                        ultrices in elit vitae, ultricies iaculis mi. Ut ac cursus ex. Nullam vestibulum
+                                        eleifend tempus. Fusce interdum tempus enim, blandit hendrerit nulla tempor in.
+                                        Curabitur eget neque ac elit pulvinar elementum.</p>
+                                    <!-- end of flavour text -->
+                                    <form>
+                                        <div class="field">
+                                            <label class="label">Name</label>
+                                            <p class="control">
+                                                <input class="input" type="text" placeholder="Text">
+                                            </p>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Email</label>
+                                            <p class="control">
+                                                <input class="input" type="email" placeholder="Email" value="">
+                                            </p>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Message</label>
+                                            <p class="control">
+                                                <textarea class="textarea" placeholder="Message"></textarea>
+                                            </p>
+                                        </div>
+                                        <div class="field is-grouped">
+                                            <p class="control">
+                                                <button class="button is-button-grey">Send Message</button>
+                                            </p>
+                                            <p class="control">
+                                                <button class="button is-button-grey">Clear Message</button>
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- form end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of contact content -->
+            </div>
+        </div>
+    </div>
+    <!-- end of main content -->
+</div>
+<!-- end of root div -->
+
+{% include "footer.html" %}
+</body>
+</html>
