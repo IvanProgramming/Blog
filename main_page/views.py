@@ -10,5 +10,6 @@ def show_main_page(request):
 
 
 def show_article(request, article_name):
-    print(article_name)
-    return render(request, "post.html")
+    return render(request, "post.html", context={
+        "article": Articles.objects.get(id=article_name)
+    })
