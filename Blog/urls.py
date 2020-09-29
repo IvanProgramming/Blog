@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from main_page.views import MainPageView
+from main_page.views import show_article, show_main_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('main_page', MainPageView.as_view())
+    path('main_page', show_main_page),
+    path('post/<slug:article_name>', show_article)
 ]

@@ -1,7 +1,14 @@
 from django.shortcuts import render
-from django.views import View
+
+from .models import Articles
 
 
-class MainPageView(View):
-    def get(self, request):
-        return render(request, "index.html")
+def show_main_page(request):
+    return render(request, "index.html", context={
+        "articles": Articles.objects.all()
+    })
+
+
+def show_article(request, article_name):
+    print(article_name)
+    return render(request, "post.html")
