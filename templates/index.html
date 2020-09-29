@@ -13,77 +13,39 @@
             <div class="columns is-mobile">
                 <!-- posts -->
                 <div class="column is-8">
-                    <!-- post -->
-                    <div class="section">
-                        <div class="post">
-                            <div class="post-header">
-                                <h4 class="title is-4"><a href="post.html">Some Post with Passion</a></h4>
-                                <h5 class="subtitle is-5">A Subtitle without Passion</h5>
-                            </div>
-                            <div class="post-content">
-                                <p>Nulla semper ipsum consequat magna vestibulum ornare. Donec dictum nibh vitae orci
-                                    pellentesque rhoncus a sed dolor. Integer non suscipit ex. Quisque tristique est ac
-                                    vulputate dictum. Vestibulum tristique ante in nulla vulputate interdum.
-                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                                    egestas. Morbi sed ex elementum, consectetur leo et, auctor augue. Maecenas
-                                    tincidunt vitae libero non lobortis ...</p>
 
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of post -->
-                    <!-- post -->
-                    <div class="section">
-                        <div class="post">
-                            <div class="post-header">
-                                <h4 class="title is-4"><a href="post.html">Some Post with Passion</a></h4>
-                                <h5 class="subtitle is-5">A Subtitle without Passion</h5>
-                            </div>
-                            <div class="post-content">
-                                <p>Nulla semper ipsum consequat magna vestibulum ornare. Donec dictum nibh vitae orci
-                                    pellentesque rhoncus a sed dolor. Integer non suscipit ex. Quisque tristique est ac
-                                    vulputate dictum. Vestibulum tristique ante in nulla vulputate interdum.
-                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                                    egestas. Morbi sed ex elementum, consectetur leo et, auctor augue. Maecenas
-                                    tincidunt vitae libero non lobortis ...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of post -->
-                    <!-- post -->
-                    <div class="section">
-                        <div class="post">
-                            <div class="post-header">
-                                <h4 class="title is-4"><a href="post.html">Some Post with Passion</a></h4>
-                                <h5 class="subtitle is-5">A Subtitle without Passion</h5>
-                            </div>
-                            <div class="post-content">
-                                <p>Nulla semper ipsum consequat magna vestibulum ornare. Donec dictum nibh vitae orci
-                                    pellentesque rhoncus a sed dolor. Integer non suscipit ex. Quisque tristique est ac
-                                    vulputate dictum. Vestibulum tristique ante in nulla vulputate interdum.
-                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                                    egestas. Morbi sed ex elementum, consectetur leo et, auctor augue. Maecenas
-                                    tincidunt vitae libero non lobortis ...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of post -->
-                    <!-- end of posts -->
+                    {% for article in articles %}
+                        <!-- post -->
+                        <div class="section">
+                            <div class="post">
+                                <div class="post-header">
+                                    <h4 class="title is-4"><a href="/post/{{ article.id }}">{{ article.title }}</a></h4>
+                                    <h5 class="subtitle is-5">{{ article.description }}</h5>
+                                </div>
+                                <div class="post-content">
+                                    <p>{{ article.md_text|truncatechars:256 }}</p>
 
-                    <!-- pagination -->
-                    <div class="section">
-                        <div class="pagination-content has-text-right is-hidden-mobile">
-                            <a class="pagination-previous" disabled>Previous</a>
-                            <a class="pagination-next">Next</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="pagination-content is-hidden-desktop is-hidden-tablet">
-                            <div class="pagination">
+                        <!-- end of post -->
+                    {% endfor %}
+                    {% if articles|length > 3 %}
+                        <!-- pagination -->
+                        <div class="section">
+                            <div class="pagination-content has-text-right is-hidden-mobile">
                                 <a class="pagination-previous" disabled>Previous</a>
                                 <a class="pagination-next">Next</a>
                             </div>
+                            <div class="pagination-content is-hidden-desktop is-hidden-tablet">
+                                <div class="pagination">
+                                    <a class="pagination-previous" disabled>Previous</a>
+                                    <a class="pagination-next">Next</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- end of pagination -->
+                        <!-- end of pagination -->
+                    {% endif %}
                 </div>
                 <!-- side bar -->
                 <div class="column is-4 is-narrow">
