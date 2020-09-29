@@ -20,6 +20,6 @@ from main_page.views import show_article, show_main_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('main_page', show_main_page),
+    path('', show_main_page),
     path('post/<slug:article_name>', show_article)
 ]
