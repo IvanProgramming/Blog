@@ -23,13 +23,13 @@
                             <!-- end of side bar header -->
                             <!-- side bar content -->
                             <div class="sidebar-list-single">
-                                <p>Posted on January 21st 2019, 10:00am</p>
-                                <p>Written by Author</p>
+                                <p>Posted on {{ article.posted_on|date }}</p>
+                                <p>Written by {{ article.author }}</p>
                             </div>
                             <!-- end of side bar content -->
                             <!-- side bar footer -->
                             <div class="sidebar-footer-single">
-                                <p><a href="index.html">Back to Home</a></p>
+                                <p><a href="/">Back to Home</a></p>
                             </div>
                             <!-- end of side bar footer -->
                         </div>
@@ -41,47 +41,7 @@
                     <div class="section">
                         <div class="post-single">
                             <div class="post-single-content">
-                                <p>Nulla semper ipsum consequat magna vestibulum ornare. Donec dictum nibh vitae orci
-                                    pellentesque rhoncus a sed dolor. Integer non suscipit ex. Quisque tristique est ac
-                                    vulputate dictum. Vestibulum tristique ante in nulla vulputate interdum.
-                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                                    egestas. Morbi sed ex elementum, consectetur leo et, auctor augue. Maecenas
-                                    tincidunt vitae libero non lobortis</p>
-                                <p>Vivamus a quam consectetur, egestas orci ac, dapibus ante. Vivamus eget tortor
-                                    venenatis, placerat neque quis, commodo neque. Sed et auctor ligula, in congue
-                                    lectus. Aenean tempus convallis lectus a tristique. Integer luctus tincidunt diam.
-                                    Aliquam erat volutpat. Mauris risus est, congue ut suscipit nec, consequat imperdiet
-                                    purus. Nunc metus neque, viverra id dolor nec, consectetur mattis lectus. Cras odio
-                                    ex, rutrum id enim a, congue pellentesque erat. Nam non ultrices tellus. Sed eget
-                                    odio nec enim vulputate volutpat sit amet mattis odio. Sed sodales, odio quis
-                                    venenatis efficitur, tortor sapien tincidunt tortor, quis venenatis augue massa eu
-                                    massa. Praesent suscipit, velit non fermentum accumsan, felis lorem vulputate purus,
-                                    a consequat lacus elit in nulla. Morbi ac fringilla tortor. Mauris fermentum ac
-                                    ipsum a posuere. Duis mattis mollis mauris et dictum.</p>
-                                <p>Phasellus placerat aliquam porttitor. Donec dolor ipsum, gravida egestas fringilla
-                                    dapibus, dapibus ac sapien. Praesent lacus erat, placerat quis cursus ut, blandit
-                                    laoreet felis. Vivamus pharetra quam nibh, ac cursus nulla porttitor a. Quisque non
-                                    dui nisl. In ultricies quis lectus ac cursus. Pellentesque habitant morbi tristique
-                                    senectus et netus et malesuada fames ac turpis egestas. Donec vulputate, nulla et
-                                    dictum venenatis, ipsum orci luctus dolor, id fringilla diam dui sit amet diam.
-                                    Vestibulum ut sapien blandit, dictum neque eu, gravida lorem.</p>
-                                <p>Sed porta mattis nisl sed mattis. Aenean massa sem, vestibulum sed orci ut, tincidunt
-                                    lobortis neque. Phasellus hendrerit dictum ipsum et posuere. Proin lobortis eget
-                                    velit at ultrices. Maecenas laoreet laoreet odio, quis rutrum enim varius vel. Nunc
-                                    venenatis purus sit amet diam porta aliquet. Suspendisse imperdiet, urna eu eleifend
-                                    pulvinar, diam neque pretium mi, in convallis enim purus a ante. Nunc erat lorem,
-                                    aliquam vitae interdum vel, consequat sit amet ipsum. Nullam hendrerit porttitor
-                                    consectetur. Curabitur libero risus, elementum ac risus scelerisque, tempus vehicula
-                                    risus. Aliquam condimentum vulputate laoreet. Aliquam consequat quis ante sed
-                                    tincidunt. Cras dictum odio id efficitur pretium. Curabitur aliquet feugiat
-                                    bibendum. Aenean bibendum lorem eget elit tincidunt, porttitor egestas purus
-                                    lobortis. Quisque ut arcu metus.</p>
-                                <p>Nulla semper ipsum consequat magna vestibulum ornare. Donec dictum nibh vitae orci
-                                    pellentesque rhoncus a sed dolor. Integer non suscipit ex. Quisque tristique est ac
-                                    vulputate dictum. Vestibulum tristique ante in nulla vulputate interdum.
-                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                                    egestas. Morbi sed ex elementum, consectetur leo et, auctor augue. Maecenas
-                                    tincidunt vitae libero non lobortis</p>
+                                {{ article.md_text }}
                             </div>
                         </div>
                     </div>
