@@ -1,3 +1,4 @@
+{% load shuffle %}
 <!DOCTYPE html>
 <html lang="en">
 {% include "meta_header_template.html" %}
@@ -56,11 +57,9 @@
                                 <h4 class="title is-4">Featured Posts</h4>
                             </div>
                             <div class="sidebar-list">
-                                <p><a href="post.html">Some Post</a></p>
-                                <p><a href="post.html">Some Post</a></p>
-                                <p><a href="post.html">Some Post</a></p>
-                                <p><a href="post.html">Some Post</a></p>
-                                <p><a href="post.html">Some Post</a></p>
+                                {% for post in articles|shuffle %}
+                                    <p><a href="/post/{{ post.id }}">{{ post.title }}</a></p>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>

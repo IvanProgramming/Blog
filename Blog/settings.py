@@ -116,3 +116,9 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     BASE_DIR / "static"
 ]
+
+# Shell article create Articles.objects.create(title="This is just my first sad post", description="I don't think
+# that it is need here", md_text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra velit dui. Sed
+# venenatis felis sed er os convallis tincidunt. Curabitur fringilla ligula risus, at ultrices mi ornare ac. Praesent
+# sed volutpat nunc. Proin eget augue ex. Suspendisse non tincidunt lorem, nec feugiat purus. Maecenas
+# pellentesque.", category=Category.obje cts.first(), author=User.objects.first())
