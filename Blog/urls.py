@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from main_page.views import show_article, show_main_page
+from main_page.views import show_article, show_main_page, show_random
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', show_main_page),
-    path('post/<slug:article_name>', show_article)
+    path('post/<slug:article_name>', show_article),
+    path('random', show_random)
 ]
