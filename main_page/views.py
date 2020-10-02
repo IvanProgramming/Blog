@@ -1,11 +1,12 @@
 from django.shortcuts import render
 
-from .models import Articles
+from .models import Articles, Category
 
 
 def show_main_page(request):
     return render(request, "index.html", context={
-        "articles": Articles.objects.all()
+        "articles": Articles.objects.all(),
+        "categories": Category.objects.all()
     })
 
 

@@ -57,7 +57,7 @@
                                 <h4 class="title is-4">Featured Posts</h4>
                             </div>
                             <div class="sidebar-list">
-                                {% for post in articles|shuffle %}
+                                {% for post in articles|shuffle|slice:5 %}
                                     <p><a href="/post/{{ post.id }}">{{ post.title }}</a></p>
                                 {% endfor %}
                             </div>
@@ -71,12 +71,9 @@
                                 <h4 class="title is-4">Categories</h4>
                             </div>
                             <div class="sidebar-list">
-                                <p><a href="category.html">Some Category</a></p>
-                                <p><a href="category.html">Some Category</a></p>
-                                <p><a href="category.html">Some Category</a></p>
-                                <p><a href="category.html">Some Category</a></p>
-                                <p><a href="category.html">Some Category</a></p>
-                                <p><a href="category.html">Some Category</a></p>
+                                {% for cat in categories|slice:5 %}
+                                    <p><a href="/category/{{ cat.id }}">{{ cat.name }}</a></p>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
