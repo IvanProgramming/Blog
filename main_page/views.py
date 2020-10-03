@@ -4,6 +4,9 @@ from .models import Articles, Category
 import random
 
 
+# TODO - Add pagination
+
+
 def show_main_page(request):
     return render(request, "index.html", context={
         "articles": Articles.objects.all(),
@@ -30,3 +33,11 @@ def show_category(request, cat_id):
         "categories": Category.objects.all(),
         "category": Category.objects.get(id=cat_id)
     })
+
+
+def show_contacts(request):
+    return render(request, "contact.html")
+
+
+def show_about(request):
+    return render(request, "about.html")
