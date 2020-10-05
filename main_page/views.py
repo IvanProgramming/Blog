@@ -4,9 +4,6 @@ from .models import Articles, Category
 import random
 
 
-# TODO - Add pagination
-
-
 def show_main_page(request):
     return render(request, "index.html", context={
         "articles": Articles.objects.all(),
