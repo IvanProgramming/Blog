@@ -1,3 +1,4 @@
+{% load parse_md %}
 <!DOCTYPE html>
 <html lang="en">
 {% include "meta_header_template.html" %}
@@ -41,7 +42,7 @@
                     <div class="section">
                         <div class="post-single">
                             <div class="post-single-content">
-                                {{ article.md_text }}
+                                {{ article.md_text|md2html|safe }}
                             </div>
                         </div>
                     </div>
