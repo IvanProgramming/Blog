@@ -1,7 +1,7 @@
 # Blog
 Simple blog, realized on Django. Html template is not mine, it is by [**plasticneko**](http://github.com/plasticneko "**plasticneko**")
 ## Installation 
-For **Linux or MacOS** users you can use special prepared script. By using this script, to inwstall use just 2 commands.
+For **Linux or MacOS** users you can use special prepared script. By using this script, to install use just 2 commands.
 `sh setup.sh`
 `pip install -r requirements.txt`
 
