@@ -25,28 +25,11 @@
                                 </div>
                                 <div class="post-content">
                                     <p>{{ article.md_text|truncatechars:256 }}</p>
-
                                 </div>
                             </div>
                         </div>
                         <!-- end of post -->
                     {% endfor %}
-                    {% if articles|length > 3 %}
-                        <!-- pagination -->
-                        <div class="section">
-                            <div class="pagination-content has-text-right is-hidden-mobile">
-                                <a class="pagination-previous" disabled>Previous</a>
-                                <a class="pagination-next">Next</a>
-                            </div>
-                            <div class="pagination-content is-hidden-desktop is-hidden-tablet">
-                                <div class="pagination">
-                                    <a class="pagination-previous" disabled>Previous</a>
-                                    <a class="pagination-next">Next</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end of pagination -->
-                    {% endif %}
                 </div>
                 <!-- side bar -->
                 <div class="column is-4 is-narrow">
