@@ -14,3 +14,11 @@ For **Linux or MacOS** users you can use special prepared script. By using this 
 
 For all platforms use
 `python manage.py runserver`
+Server is availible on http://localhost:8000
+
+## Adding admin account
+To create admin account, please run this command
+`python manage.py createsuperuser` and follow instructions.
+
+## Add articles and categories
+To add article, go to http://localhost:8000/admin url. Login with superuser credentials. You can add articles and categories from admin panel
