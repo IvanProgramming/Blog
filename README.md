@@ -13,4 +13,4 @@ For **Linux or MacOS** users you can use special prepared script. By using this 
 ## Running sever
 
 For all platforms use
-`python manage,py runserver`
+`python manage.py runserver`
